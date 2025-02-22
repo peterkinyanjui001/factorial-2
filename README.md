@@ -1,4 +1,5 @@
 EB3/61526/22
+
 WANYOIKE PETER KINYANJUI
 
 FACTORIAL TIME COMPLEXITY
@@ -140,3 +141,69 @@ Repeating this process:
 (n times)
 T(n)=O(1)+O(1)+...+O(1)(n times)
 Thus, the time complexity is O(n). 
+
+FIBONACCI TIME COMPLEXITY
+
+Your Fibonacci function follows the recursive definition:
+
+𝐹
+(
+𝑛
+)
+=
+𝐹
+(
+𝑛
+−
+1
+)
++
+𝐹
+(
+𝑛
+−
+2
+)
+F(n)=F(n−1)+F(n−2)
+This creates a binary recursion tree, where each call branches into two subproblems. The recurrence relation for time complexity is:
+
+𝑇
+(
+𝑛
+)
+=
+𝑇
+(
+𝑛
+−
+1
+)
++
+𝑇
+(
+𝑛
+−
+2
+)
++
+𝑂
+(
+1
+)
+T(n)=T(n−1)+T(n−2)+O(1)
+This forms an exponential growth pattern, leading to:
+
+𝑇
+(
+𝑛
+)
+=
+𝑂
+(
+2
+𝑛
+)
+T(n)=O(2 
+n
+ )
+✅ Time Complexity: O(2ⁿ) (Exponential time, very slow for large n)
