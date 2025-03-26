@@ -207,3 +207,57 @@ T(n)=O(2
 n
  )
 ✅ Time Complexity: O(2ⁿ) (Exponential time, very slow for large n)
+
+MERGE SORT TIME COMPLEXITY ANALYSIS
+The array is divided repeatdly into two halves until each subarray contains only one element.
+Merging step combines the sorted array maintaing the descending order.
+Each merge step takes O(n) time.
+
+The array is divided into halves, resulting in this equation:
+
+𝑇
+(
+𝑛
+)
+=
+2
+𝑇
+(
+𝑛
+/
+2
+)
++
+𝑂
+(
+𝑛
+)
+T(n)=2T(n/2)+O(n)
+Since 
+𝑓
+(
+𝑛
+)
+=
+𝑂
+(
+𝑛
+)
+f(n)=O(n) matches 
+𝑂
+(
+𝑛
+)
+O(n), the overall complexity is:
+
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn)
+time complexity of merge sort will be 0(n log n) in all case, average, worst and best case
+
+
